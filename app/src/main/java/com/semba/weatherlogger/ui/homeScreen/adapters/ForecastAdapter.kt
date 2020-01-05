@@ -44,6 +44,7 @@ class ForecastAdapter (private val delegate: HomeNavigator) : RecyclerView.Adapt
     inner class ViewHolder(view: View) : BaseViewHolder(view)
     {
         private val temp = view.temp
+        private val name = view.name
         private val date = view.date
         private val detailsBtn = view.details_btn
         private val deleteBtn = view.delete_btn
@@ -57,7 +58,8 @@ class ForecastAdapter (private val delegate: HomeNavigator) : RecyclerView.Adapt
         }
 
         override fun onBind(position: Int) {
-            temp?.text = items[position].name
+            temp?.text = items[position].temp.toString()
+            name?.text = items[position].name
             date?.text = items[position].date
 
             detailsBtn?.setOnClickListener(detailsClick)
