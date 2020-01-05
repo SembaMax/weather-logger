@@ -164,4 +164,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(), HomeNav
     override fun deleteForecast(forecastItem: ForecastEntity) {
         mViewModel.deleteForecast(forecastItem)
     }
+
+    override fun requestPermission() {
+        checkPermissions()
+    }
 }

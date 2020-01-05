@@ -12,6 +12,7 @@ interface HomeNavigator: BaseNavigator {
     fun navigateToDetailsScreen(forecastItem: ForecastEntity)
     fun deleteForecast(forecastItem: ForecastEntity)
     fun invalidateUI()
+    fun requestPermission()
     fun reloadRecyclerView(items: ArrayList<ForecastEntity>)
     fun updateWidget(temp: String, name: String, description: String, feelsLike: String)
 }

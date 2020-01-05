@@ -4,6 +4,7 @@ import android.location.Location
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import com.semba.weatherlogger.R
 import com.semba.weatherlogger.api.ApiCallback
 import com.semba.weatherlogger.base.BaseViewModel
 import com.semba.weatherlogger.data.entities.ForecastEntity
@@ -114,6 +115,11 @@ class HomeViewModel @Inject constructor(private val repository: WeatherRepositor
     {
         if (latestForecast.value != null) {
             insertNewRecord(latestForecast.value!!.toEntity())
+        }
+        else
+        {
+            mNavigator?.get()?.showErrorMessage(R.string.no_data)
+            mNavigator?.get()?.requestPermission()
         }
     }
 
