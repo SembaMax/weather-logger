@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_fab_image_size" tools:override="true">30dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="delete_button_size">40dp</dimen>
+    <dimen name="details_button_height">40dp</dimen>
+    <dimen name="date_label_width">50dp</dimen>
+    <dimen name="city_label_font_size">25sp</dimen>
+    <dimen name="temp_label_font_size">70sp</dimen>
+    <dimen name="feel_label_font_size">19sp</dimen>
+    <dimen name="description_label_font_size">19sp</dimen>
+    <dimen name="date_button_size">40dp</dimen>
+    <dimen name="back_button_size">50dp</dimen>
+    <dimen name="max_temp_label_font_size">20sp</dimen>
+    <dimen name="max_temp_icon_size">60dp</dimen>
+    <dimen name="forecast_icon_size">40dp</dimen>
+</resources>

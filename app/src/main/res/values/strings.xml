@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherLogger</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main">Main</string>
+    <string name="details">Details</string>
+    <string name="error">Something went wrong.</string>
+    <string name="more_details">More details</string>
+    <string name="date">Date</string>
+    <string name="degree_symbol">°</string>
+    <string name="feels_like">Feels like</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="save">Save it!</string>
+    <string name="no_data">No Data Yet</string>
+</resources>
